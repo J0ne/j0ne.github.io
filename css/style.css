@@ -1,0 +1,34 @@
+
+ul.list-group li.person{
+	border-radius: 10px 10px;
+	border-width: 4px;
+	min-width: 30%;
+	cursor: pointer;
+}
+ul.list-group li:hover{
+	background-color: #99FF99;
+}
+
+.payment-pill{
+	background-color: green;
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
+	margin: 5px;
+	cursor: pointer;
+	border: 1px solid black;
+}
+.payment-pill-red{
+	background-color: red;
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
+	margin: 5px;
+	cursor: pointer;	
+	border: 1px solid black;
+}
+
+.btn-upay{
+	float: right;
+	clear: both;
+}
