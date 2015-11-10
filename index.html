@@ -24,9 +24,12 @@
     <![endif]-->
   </head>
   <body>
-    <div id="header" class="jumbotron">
-       <h1>uPay</h1>
+  <div class="container">
+        <div id="jumbo-logo" class="jumbotron">
+          <h1>uPay</h1>
     </div>
+  </div>
+
     <div class="container" ng-controller="PaymentController as payment">
     <div class="container" ng-controller="PersonListController as persons">
       <form ng-hide="persons.length > 3" ng-submit="addPerson()">
@@ -53,7 +56,7 @@
         <button ng-click="addPayment()" type="submit" class="btn btn-success">Add new payment!</button>
      </div>
     <ul class="list-group">
-      <li class="list-group-item nav nav-pills" ng-repeat="item in payments">
+      <li class="list-group-item nav nav-pills" ng-repeat="item in payments | orderBy:'-$id'">
       
         <h2>{{(item.sum | number:2)+'€'}}</h2>
         <p>{{item.description}}</p>

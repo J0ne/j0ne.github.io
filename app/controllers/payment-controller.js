@@ -19,7 +19,6 @@
     		$scope.payments = paymentList;
     		this.active = false;
     		this.shares = [];
-    		
 
     		var init = function (){
     			console.log("Hep")

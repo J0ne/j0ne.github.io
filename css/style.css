@@ -32,3 +32,16 @@ ul.list-group li:hover{
 	float: right;
 	clear: both;
 }
+
+#jumbo-logo{
+	background-image: url("../images/bookkeeping.jpg");
+}
+.jumbotron h1{
+	padding: 30px;
+	border-radius: 15px;
+	background-color: #7DBDE8;
+	color: white !important;
+	border: 3px solid black;
+	width: 50%;
+	margin-left: auto;
+}
